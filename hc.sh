@@ -174,3 +174,50 @@ echo "ifconfig -a"
 echo "------------------------------------------"
 ifconfig -a
 echo
+
+echo "LVScan Output"
+echo "------------------------------------------"
+lvscan
+echo
+
+echo "Fstab Output"
+echo "------------------------------------------"
+cat /etc/fstab
+echo
+
+echo "NFS Connection Check"
+echo "------------------------------------------"
+nfs_mounts=$(mount | grep nfs)
+if [[ -z "$nfs_mounts" ]]; then
+    echo "No NFS connections found."
+else
+    echo "NFS Connections:"
+    echo "$nfs_mounts"
+fi
+echo
+
+echo "Recently Added Users"
+echo "------------------------------------------"
+recent_users=$(grep -E '^[^:]+:[^\!*]' /etc/passwd | awk -F: '{print $1,$3,$7}' | while read -r user uid home; do
+    echo "User: $user (UID: $uid, Home: $home)"
+done)
+echo "$recent_users"
+echo
+
+echo "Active Users"
+echo "------------------------------------------"
+active_users=$(who | awk '{print $1}')
+echo "$active_users"
+echo
+echo
+echo "Password Expiration Information"
+echo "------------------------------------------"
+passwd_info=$(grep -E '^[^:]+:[^\!*]' /etc/passwd | awk -F: '{print $1}' | while read -r user; do
+    chage_output=$(chage -l "$user" 2>/dev/null)
+    if [[ -n "$chage_output" ]]; then
+        last_change=$(echo "$chage_output" | awk -F: '/Last password change/ {print $2}')
+        expires=$(echo "$chage_output" | awk -F: '/Password expires/ {print $2}')
+        echo "Username : $user , Last Password Change : $last_change , Password Expires : $expires"
+    fi
+done)
+echo "$passwd_info"
