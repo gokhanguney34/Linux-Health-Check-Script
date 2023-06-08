@@ -1,0 +1,225 @@
+************************************
+        System Health Status
+************************************
+Hostname : mongotestdb1
+Operating System : CentOS Linux 7 (Core)
+Kernel Version : 3.10.0-1160.90.1.el7.x86_64
+OS Architecture : x86_64
+System Uptime : up by up 1 minute
+Current System Date & Time : Thu Jun  8 15:48:49 +03 2023
+
+Checking For Read-only File System[s]
+-------------------------------------
+No read-only file system[s] found.
+
+Checking For Currently Mounted File System[s]
+------------------------------------------
+/dev/mapper/vg_root-lv_root on / type xfs (rw,relatime,attr2,inode64,noquota)
+/dev/sda1 on /boot type xfs (rw,relatime,attr2,inode64,noquota)
+/dev/sr0 on /run/media/root/CentOS type x86_64 type
+
+Checking For Disk Usage On Mounted File System[s]
+-----------------------------------------------
+Mounted File System[s] Utilization (Percentage Used):
+--------------------------------------------------------------------------
+/dev/mapper/vg_root-lv_root / 33%     ------  OK/HEALTHY
+/dev/sda1 /boot 21%     ------  OK/HEALTHY
+/dev/sr0 /run/media/root/CentOS 100%     ------  OK/HEALTHY
+
+Checking For Zombie Processes
+-------------------------------------
+No zombie processes found on the system.
+
+Checking For INode Usage
+------------------------------------------
+INode Utilization (Percentage Used):
+--------------------------------------------------------------------------
+/dev/mapper/vg_root-lv_root / 2%     ------  OK/HEALTHY
+/dev/sda1 /boot 1%     ------  OK/HEALTHY
+/dev/sr0 /run/media/root/CentOS -     ------  OK/HEALTHY
+
+Checking SWAP Details
+-------------------------------------
+Total Swap Memory in MiB : 0, in GiB : 0
+Swap Free Memory in MiB : 0, in GiB : 0
+
+Checking For Processor Utilization
+-------------------------------------
+Current Processor Utilization Summary :
+
+%Cpu(s):  0.0 us,  6.1 sy,  0.0 ni, 93.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+
+Checking For Load Average
+-------------------------------------
+Current Load Average :  1.43, 0.78, 0.30
+
+Most Recent 3 Reboot Events
+------------------------------------------
+reboot system boot 3.10.0-1160.90.1 Thu
+reboot system boot 3.10.0-1160.90.1 Tue
+reboot system boot 3.10.0-1160.el7. Tue
+reboot system boot 3.10.0-1160.el7. Tue
+
+Most Recent 3 Shutdown Events
+------------------------------------------
+shutdown system down 3.10.0-1160.el7. Tue
+
+wtmp begins Tue Jun 6
+
+Top 5 Memory Resource Hog Processes
+------------------------------------------
+   PID %MEM %CPU CMD
+  2032  4.8 11.2 /usr/bin/gnome-shell
+  2316  2.3  4.6 /usr/libexec/gnome-initial-setup --existing-user
+  2321  2.0  3.5 /usr/bin/gnome-software --gapplication-service
+  1521  1.5  1.7 /usr/bin/X :0 -background none -noreset -audit 4 -verbose -auth /run/gdm/auth-for-gdm-CKbLC2/database -seat seat0 -nolisten tcp vt1
+  2665  1.1 10.0 /usr/bin/python /usr/share/PackageKit/helpers/yum/yumBackend.py get-updates none
+
+Top 5 CPU Resource Hog Processes
+------------------------------------------
+   PID %MEM %CPU CMD
+  2032  4.8 11.2 /usr/bin/gnome-shell
+  2665  1.1 10.0 /usr/bin/python /usr/share/PackageKit/helpers/yum/yumBackend.py get-updates none
+  2316  2.3  4.6 /usr/libexec/gnome-initial-setup --existing-user
+  2321  2.0  3.5 /usr/bin/gnome-software --gapplication-service
+  2187  0.1  2.6 /usr/bin/pulseaudio --start
+
+Running Services
+------------------------------------------
+UNIT                     LOAD   ACTIVE SUB     DESCRIPTION
+abrt-oops.service        loaded active running ABRT kernel log watcher
+abrt-xorg.service        loaded active running ABRT Xorg log watcher
+abrtd.service            loaded active running ABRT Automated Bug Reporting Tool
+accounts-daemon.service  loaded active running Accounts Service
+alsa-state.service       loaded active running Manage Sound Card State (restore and store)
+atd.service              loaded active running Job spooling tools
+auditd.service           loaded active running Security Auditing Service
+avahi-daemon.service     loaded active running Avahi mDNS/DNS-SD Stack
+bluetooth.service        loaded active running Bluetooth service
+bolt.service             loaded active running Thunderbolt system service
+colord.service           loaded active running Manage, Install and Generate Color Profiles
+crond.service            loaded active running Command Scheduler
+cups.service             loaded active running CUPS Printing Service
+dbus.service             loaded active running D-Bus System Message Bus
+fwupd.service            loaded active running Firmware update daemon
+gdm.service              loaded active running GNOME Display Manager
+gssproxy.service         loaded active running GSSAPI Proxy Daemon
+irqbalance.service       loaded active running irqbalance daemon
+ksmtuned.service         loaded active running Kernel Samepage Merging (KSM) Tuning Daemon
+libstoragemgmt.service   loaded active running libstoragemgmt plug-in server daemon
+libvirtd.service         loaded active running Virtualization daemon
+lvm2-lvmetad.service     loaded active running LVM2 metadata daemon
+mcelog.service           loaded active running Machine Check Exception Logging Daemon
+ModemManager.service     loaded active running Modem Manager
+NetworkManager.service   loaded active running Network Manager
+packagekit.service       loaded active running PackageKit Daemon
+pcscd.service            loaded active running PC/SC Smart Card Daemon
+polkit.service           loaded active running Authorization Manager
+postfix.service          loaded active running Postfix Mail Transport Agent
+rngd.service             loaded active running Hardware RNG Entropy Gatherer Daemon
+rpcbind.service          loaded active running RPC bind service
+rsyslog.service          loaded active running System Logging Service
+rtkit-daemon.service     loaded active running RealtimeKit Scheduling Policy Service
+smartd.service           loaded active running Self Monitoring and Reporting Technology (SMART) Daemon
+sshd.service             loaded active running OpenSSH server daemon
+systemd-journald.service loaded active running Journal Service
+systemd-logind.service   loaded active running Login Service
+systemd-machined.service loaded active running Virtual Machine and Container Registration Service
+systemd-udevd.service    loaded active running udev Kernel Device Manager
+tuned.service            loaded active running Dynamic System Tuning Daemon
+udisks2.service          loaded active running Disk Manager
+upower.service           loaded active running Daemon for power management
+vgauthd.service          loaded active running VGAuth Service for open-vm-tools
+vmtoolsd.service         loaded active running Service for virtual machines hosted on VMware
+wpa_supplicant.service   loaded active running WPA Supplicant daemon
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+45 loaded units listed. Pass --all to see loaded but inactive units, too.
+To show all installed unit files use 'systemctl list-unit-files'.
+
+Listening Ports
+------------------------------------------
+tcp        0      0 192.168.122.1:53        0.0.0.0:*               LISTEN      1380/dnsmasq
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN      1079/cupsd
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      1371/master
+tcp        0      0 0.0.0.0:8222            0.0.0.0:*               LISTEN      1078/sshd
+tcp        0      0 0.0.0.0:111             0.0.0.0:*               LISTEN      696/rpcbind
+tcp6       0      0 ::1:631                 :::*                    LISTEN      1079/cupsd
+tcp6       0      0 ::1:25                  :::*                    LISTEN      1371/master
+tcp6       0      0 :::8222                 :::*                    LISTEN      1078/sshd
+tcp6       0      0 :::111                  :::*                    LISTEN      696/rpcbind
+
+SSH Permit Root Login
+------------------------------------------
+PermitRootLogin : yes
+
+CPU Count
+------------------------------------------
+CPU Count : 2
+
+SELinux Status
+------------------------------------------
+SELinux Status : Disabled
+
+Firewall Status and Rules
+------------------------------------------
+Firewall Service : Not Running
+
+Ulimit Settings
+------------------------------------------
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 15593
+max locked memory       (kbytes, -l) 64
+max memory size         (kbytes, -m) unlimited
+open files                      (-n) 1024
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 8192
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 15593
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+
+ifconfig -a
+------------------------------------------
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.60.138  netmask 255.255.255.0  broadcast 192.168.60.255
+        inet6 fe80::d37b:abe1:2f71:767e  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::7cd1:41ed:b2c8:bd10  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::9230:d17:89fe:f690  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:cc:5c:ff  txqueuelen 1000  (Ethernet)
+        RX packets 2419  bytes 2061939 (1.9 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 442  bytes 88426 (86.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 48  bytes 4080 (3.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 48  bytes 4080 (3.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255
+        ether 52:54:00:48:86:e9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virbr0-nic: flags=4098<BROADCAST,MULTICAST>  mtu 1500
+        ether 52:54:00:48:86:e9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
